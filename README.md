@@ -13,10 +13,10 @@
     </ul>
 </div>
 
-
 <div>
     <h3>Intruction</h3>
     <p>Simply execute go run main command or alternatively, build the file with go build and execute it with ./P2P.exe </p>
+    <p>Use /check during stream to check current connected nodes </p>
     <p>For testing, use go test -v command </p>
 </div>
     
