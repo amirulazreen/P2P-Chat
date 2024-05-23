@@ -8,6 +8,7 @@ import (
 	"io"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/libp2p/go-libp2p/core/network"
 )
@@ -72,6 +73,8 @@ func (manager *NodeManager) readData(rw *bufio.ReadWriter) {
 			return
 		}
 
+		currentTime := time.Now().Format("2006-01-02 15:04:05")
+		fmt.Printf("%s\n", currentTime)
 		fmt.Printf("Message: %s\n", string(plaintext))
 	}
 }
